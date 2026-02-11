@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML - with Mahesh </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00c6ff;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        code {
+            background: #eee;
+            padding: 10px;
+            display: block;
+            border-left: 4px solid #007bff;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #00c6ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Learn HTML</h1>
+    <p>Created by <strong> GUNTU MAHESH</strong></p>
+</header>
+
+<nav>
+    <a href="#intro">Introduction</a>
+    <a href="#basics">HTML Basics</a>
+    <a href="#example">Example</a>
+    <a href="#youtube">YouTube</a>
+</nav>
+
+<section id="intro">
+    <div class="card">
+        <h2>What is HTML?</h2>
+        <p>
+            HTML stands for <strong>HyperText Markup Language</strong>.
+            It is used to create the structure of websites.
+        </p>
+    </div>
+</section>
+
+<section id="basics">
+    <div class="card">
+        <h2>Basic HTML Structure</h2>
+        <p>This is a simple HTML structure:</p>
+        <code>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My Website&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Hello World<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+        </code>
+    </div>
+</section>
+
+<section id="example">
+    <div class="card">
+        <h2>Interactive Example</h2>
+        <p>Click the button to see JavaScript in action:</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message" style="margin-top:10px;font-weight:bold;"></p>
+    </div>
+</section>
+
+<section id="youtube">
+    <div class="card">
+        <h2>@MAHESH_Creation-m7</h2>
+        <p>
+            Learn more about HTML and web development on my YouTube channel.
+        </p>
+        <a href=https://www.youtube.com/@mahesh_creations-m7 target="_blank">
+            <button>Visit My YouTube Channel</button>
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>
+        © 2026 | Designed by Mahesh <br>
+        YouTube: <a href=https://www.youtube.com/@mahesh_creations-m7 target="_blank">Visit Channel</a>
+    </p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerText =
+            "You just used JavaScript inside an HTML website!";
+    }
+</script>
+
+</body>
+</html>
